@@ -110,38 +110,41 @@ Agent Collaboration: Developed using a structured "plan → delegate → verify 
 
 ## 5) Repository Structure
 
+
+```
 msin0097-e2e-predictive-system/
 │
 ├── data/
-│ ├── raw/ # raw dataset (unchanged)
-│ └── processed/ # saved splits and metadata
+│   ├── raw/                # raw dataset (unchanged)
+│   └── processed/          # saved splits and metadata
 │
 ├── notebooks/
-│ └── e2e_workflow.ipynb # narrative analysis (Steps 1–6)
+│   └── e2e_workflow.ipynb  # narrative analysis (Steps 1–6)
 │
-├── scripts/ # runnable workflow scripts
-│ ├── prepare_data.py # Step 3: splits + preprocess metadata
-│ ├── train.py # Step 4: baseline model comparison
-│ ├── tune.py # Step 5: tuning + threshold + error analysis
-│ └── finalize.py # Step 6: final retrain + test + artifact export
+├── scripts/                # runnable workflow scripts
+│   ├── prepare_data.py     # Step 3: splits + preprocess metadata
+│   ├── train.py            # Step 4: baseline model comparison
+│   ├── tune.py             # Step 5: tuning + threshold + error analysis
+│   └── finalize.py         # Step 6: final retrain + test + artifact export
 │
-├── src/ # reusable pipeline utilities
-│ ├── config.py # constants and paths
-│ ├── data.py # load/save helpers
-│ ├── interpret.py
-│ ├── preprocess.py
-│ ├── utils.py
-│ └── evaluate.py # metrics + plotting helpers
+├── src/                    # reusable pipeline utilities
+│   ├── config.py           # constants and paths
+│   ├── data.py             # load/save helpers
+│   ├── interpret.py
+│   ├── preprocess.py
+│   ├── utils.py
+│   └── evaluate.py         # metrics + plotting helpers
 │
 ├── outputs/
-│ ├── figures
-│ ├── metrics
-│ ├── models
-│ └── runs/ # timestamped runs (metrics/figures/models)
-││
+│   ├── figures/
+│   ├── metrics/
+│   ├── models/
+│   └── runs/               # timestamped runs
+│
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
 
 
 **Note:** `outputs/` and virtual environments are typically excluded from Git to keep the repo lightweight.
