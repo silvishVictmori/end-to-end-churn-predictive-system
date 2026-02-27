@@ -159,14 +159,14 @@ Create/activate a Python 3.11 environment, then:
 
 pip install -r requirements.txt
 
-#### Limitations & Risks
+## 7) Limitations & Risks
 Temporal Leakage: The lack of timestamps in the current dataset prevents full verification of whether satisfaction metrics were recorded before or after the churn event.
 
 Synthetic Data: The dataset may not capture the full complexity or operational noise of a live production environment.
 
 Non-Causal: Identified feature importance reflects associations with churn rather than direct causal influence.
 
-#### Future Improvements
+## 8) Future Improvements
 Incorporate timestamps for time-based splits to eliminate temporal leakage.
 
 Add fairness checks across demographic groups (e.g., gender or country) prior to operational deployment.
