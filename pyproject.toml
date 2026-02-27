@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "end-to-end-predictive-system"
+version = "0.1.0"
+description = "End-to-end predictive system (reproducible ML project)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  # Core
+  "numpy",
+  "pandas",
+
+  # Config + IO
+  "pyyaml",
+
+  # Modeling (baseline; works for many tabular problems)
+  "scikit-learn",
+
+  # Utilities commonly needed in pipelines
+  "joblib",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

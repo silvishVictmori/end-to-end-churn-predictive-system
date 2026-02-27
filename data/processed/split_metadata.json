@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-02-26T21:10:42.159441Z",
+  "raw_path": "D:\\Software\\vscode\\HelloWorld\\msin0097-e2e predictive system\\data\\raw\\customer_churn_business_dataset.csv",
+  "processed_dir": "D:\\Software\\vscode\\HelloWorld\\msin0097-e2e predictive system\\data\\processed",
+  "target": "churn",
+  "raw_validation_summary": {
+    "rows": 10000,
+    "cols": 32,
+    "duplicate_rows": 0,
+    "missing_pct_top10": {
+      "complaint_type": 20.45,
+      "customer_id": 0.0,
+      "age": 0.0,
+      "gender": 0.0,
+      "city": 0.0,
+      "customer_segment": 0.0,
+      "tenure_months": 0.0,
+      "country": 0.0,
+      "contract_type": 0.0,
+      "monthly_logins": 0.0
+    },
+    "target_rate": 0.1021,
+    "target_counts": {
+      "0": 8979,
+      "1": 1021
+    },
+    "bounded_rule_violations": {
+      "weekly_active_days": 0,
+      "email_open_rate": 0,
+      "marketing_click_rate": 0
+    }
+  },
+  "split_summary": {
+    "train_rate": 0.1021875,
+    "val_rate": 0.101875,
+    "test_rate": 0.102,
+    "train_n": 6400,
+    "val_n": 1600,
+    "test_n": 2000
+  },
+  "dropped_cols": [],
+  "numeric_cols": [
+    "age",
+    "tenure_months",
+    "monthly_logins",
+    "weekly_active_days",
+    "avg_session_time",
+    "features_used",
+    "usage_growth_rate",
+    "last_login_days_ago",
+    "monthly_fee",
+    "total_revenue",
+    "payment_failures",
+    "support_tickets",
+    "avg_resolution_time",
+    "csat_score",
+    "escalations",
+    "email_open_rate",
+    "marketing_click_rate",
+    "nps_score",
+    "referral_count"
+  ],
+  "categorical_cols": [
+    "gender",
+    "country",
+    "city",
+    "customer_segment",
+    "signup_channel",
+    "contract_type",
+    "payment_method",
+    "discount_applied",
+    "price_increase_last_3m",
+    "complaint_type",
+    "survey_response"
+  ]
+}
