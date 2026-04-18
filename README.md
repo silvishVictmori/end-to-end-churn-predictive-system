@@ -1,4 +1,4 @@
-# MSIN0097 Predictive Analytics — Customer Churn Prediction System (End-to-End)
+# Customer Churn Prediction System (End-to-End)
 
 This repository contains an end-to-end predictive analytics pipeline for customer churn prediction. It follows the coursework workflow structure (Steps 1–6) and is designed to be reproducible, auditable, and business-interpretable: raw data is preserved, preprocessing is fitted only on training data, model selection is evidence-based, and final outputs include both performance results and actionable churn drivers.
 
